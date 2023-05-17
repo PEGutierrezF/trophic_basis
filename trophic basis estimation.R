@@ -17,7 +17,6 @@
 
 
 
-
 # cleans global environment
 rm(list = ls())
 
@@ -30,5 +29,4 @@ excel_sheets(path = tb)
 
 
 # QPA February 17  --------------------------------------------------------
-qpb_Feb17 <- read_excel(path = QPB_data, sheet = "QPB_Feb17")  
-qpb_Feb17 <- qpb_Feb17 %>% select(taxa,mean_C,sd_C,mean_N,sd_N) %>% na.omit()
+tb_all <- read_excel(path = tb, sheet = "Sheet1")  
