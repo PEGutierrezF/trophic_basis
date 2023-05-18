@@ -1,8 +1,7 @@
 
 
 
-install.packages('DiagrammeR')
-library(readxl)
-library(DiagrammeR)
-library(dplyr)
-library(ggplot2)
+
+
+libraries <- c('readxl', 'DiagrammeR', 'dplyr', 'ggplot2')
+lapply(libraries,require, character.only = TRUE)

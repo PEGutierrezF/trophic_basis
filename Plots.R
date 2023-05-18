@@ -20,7 +20,7 @@ feb17_Lel <- grViz("
     Algae -> Leptophlebiidae [penwidth = 0.5, label = '9.68']
   }
 ")
-
+feb17_Lel
 # Define the second plot
 nov17_Lel <- grViz("
   digraph {
