@@ -1,5 +1,17 @@
 
 
+
+
+# ---------------------------------------------
+# Plots
+# 18 May 2023
+# Pablo E. Gutiérrez-Fonseca
+# pabloe.gutierrezfonseca@gmail.com
+# ---------------------------------------------
+#  
+
+
+
 grid.newpage()
 
 {
@@ -75,4 +87,7 @@ grid.text('<10',
           y = unit(.66, "npc"), 
           gp = gpar(fontsize = 15, fontface = "plain"))
 }
+
+# Save the grid as a JPEG image
+jpeg("NJ_Feb17.jpg")
 
