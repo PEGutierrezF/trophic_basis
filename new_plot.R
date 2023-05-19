@@ -76,5 +76,3 @@ grid.text('<10',
           gp = gpar(fontsize = 15, fontface = "plain"))
 }
 
-# Save the plot as a JPG file
-ggsave("plot.jpg", plot = last_plot(), device = "jpeg", dpi = 300)
