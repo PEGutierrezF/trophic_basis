@@ -33,7 +33,7 @@ tb_all$contrib <- ifelse(tb_all$food_res == "leaf", (tb_all$prop / 0.1) * 0.5,
                   ifelse(tb_all$food_res %in% c("algae", "biofilm"), 
                                 (tb_all$prop / 0.3) * 0.5, NA))
 
-
+tb_all
 
 
 

@@ -96,5 +96,5 @@ grid.text('<10',
 }
 
 # Save the grid as a JPEG image
-#jpeg("NJ_Feb17.jpg")
+# jpeg("NJ_Feb17.jpg")
 
