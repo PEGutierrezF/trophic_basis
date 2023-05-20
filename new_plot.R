@@ -45,11 +45,18 @@ text <- glue::glue("<span style='font-size:18pt; color:black'>
                    mg m^-2 mo^-1</span>")
 grid.draw(richtext_grob(text, x = 0.9, y = 0.8, hjust = 1))
 
+
 # Connect the boxes and print/plot them
 connectGrob(Leaf, Lepto, "vertical",
-            lty_gp = gpar(lwd = 6, col = "black", fill = "black"))
-connectGrob(Biofilm, Lepto, "vertical")
-connectGrob(algae, Lepto, "vertical")
+            lty_gp = gpar(lwd = 6, col = "black", fill = "black"),
+            arrow_obj = getOption("connectGrobArrow", 
+                                  default = arrow(ends = "last", type = "open")))
+connectGrob(Biofilm, Lepto, "vertical",
+            arrow_obj = getOption("connectGrobArrow", 
+                                  default = arrow(ends = "last", type = "open")))
+connectGrob(algae, Lepto, "vertical",
+            arrow_obj = getOption("connectGrobArrow", 
+                                  default = arrow(ends = "last", type = "open")))
 
 
 # Define the lines
@@ -89,5 +96,5 @@ grid.text('<10',
 }
 
 # Save the grid as a JPEG image
-jpeg("NJ_Feb17.jpg")
+#jpeg("NJ_Feb17.jpg")
 
