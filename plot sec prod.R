@@ -39,9 +39,9 @@ ggplot(neohagenulus_data, aes(x = periodo, y = mean,
   # Add error bars for standard deviation
   geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), size=1.5, width = 0.01) +
   # Customize appearance
-  labs(x = "Period", y = expression("Mean (mg m"^-2*" mo"^-1*")")) +
+  labs(x = "Period", y = expression("Secondary Production (mg m"^-2*" mo"^-1*")")) +
   scale_color_manual(values = c("Pre-hurricane" = "#009E73", "Post-hurricane" = "#56B4E9")) +
-  ylim(0,700) +
+  ylim(0,60) +
   theme_bw() +
   
   theme(legend.position = "none") +
@@ -69,9 +69,9 @@ ggplot(cloeodes_data, aes(x = periodo, y = mean,
   # Add error bars for standard deviation
   geom_errorbar(aes(ymin = mean - sd, ymax = mean + sd), size=1.5, width = 0.01) +
   # Customize appearance
-  labs(x = "Period", y = expression("Mean (mg m"^-2*" mo"^-1*")")) +
+  labs(x = "Period", y = expression("Secondary Production (mg m"^-2*" mo"^-1*")")) +
   scale_color_manual(values = c("Pre-hurricane" = "#009E73", "Post-hurricane" = "#56B4E9")) +
-  ylim(0,400) +
+  ylim(0,25) +
   theme_bw() +
   
   theme(legend.position = "none") +
