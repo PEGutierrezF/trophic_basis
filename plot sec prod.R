@@ -83,7 +83,8 @@ ggplot(cloeodes_data, aes(x = periodo, y = mean,
 
 
 
-# boxplot  ----------------------------------------------------------------
+
+# Phylloicus pulchrus -----------------------------------------------------
 # Create separate data frames for each taxa
 phylloicus_data <- df[df$taxa == "Phylloicus", ]
 
