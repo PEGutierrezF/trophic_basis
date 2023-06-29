@@ -15,7 +15,7 @@
 grid.newpage()
 
 {
-Lepto <- boxGrob("Leptophlebiidae",
+Lepto <- boxGrob("Phylloicus pulchrus",
                   x = .5, y = 0.9,
                   bjust = "bottom",
                  txt_gp = gpar(fontsize = 20),
@@ -48,13 +48,15 @@ grid.draw(richtext_grob(text, x = 0.9, y = 0.8, hjust = 1))
 
 # Connect the boxes and print/plot them
 connectGrob(Leaf, Lepto, "vertical",
-            lty_gp = gpar(lwd = 6, col = "black", fill = "black"),
+            lty_gp = gpar(lwd = 1, col = "black", fill = "black"),
             arrow_obj = getOption("connectGrobArrow", 
                                   default = arrow(ends = "last", type = "open")))
 connectGrob(Biofilm, Lepto, "vertical",
+            lty_gp = gpar(lwd = 1, col = "black", fill = "black"),
             arrow_obj = getOption("connectGrobArrow", 
                                   default = arrow(ends = "last", type = "open")))
 connectGrob(algae, Lepto, "vertical",
+            lty_gp = gpar(lwd = 1, col = "black", fill = "black"),
             arrow_obj = getOption("connectGrobArrow", 
                                   default = arrow(ends = "last", type = "open")))
 
