@@ -22,7 +22,7 @@ excel_sheets(path = tb)
 
 
 
-tb_all <- read_excel(path = tb, sheet = "Sheet1")  
+tb_all <- read_excel(path = tb, sheet = "energyflow")  
 
 # Create a new column 'prop' based on the multiplication
 tb_all$prop <- tb_all$sec_pro * tb_all$perc_iso_sig

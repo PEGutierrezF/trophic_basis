@@ -12,6 +12,7 @@
 
 
 
+# install.packages('gridtext')
 libraries <- c('readxl', 'dplyr', 'ggplot2',
                'Gmisc','glue','htmlTable','grid', 'magrittr',
                'gridtext')
